@@ -25,3 +25,7 @@ function validAnagram(str1, str2) {
     // otherwise return true
     return true;
 }
+
+// this works due to both objects and strings having to be of the same length
+// we can initialize objects that either the value at specific index exists (+1) or doesnt (=1)
+// we can then loop through the keys and check that their values are equal
