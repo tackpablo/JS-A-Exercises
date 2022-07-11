@@ -1,3 +1,5 @@
+// Time Complexity - O(N)
+
 function sameFrequency(nums1, nums2) {
     // initialize 2 objects that will hold letters and count
     let result1 = {};

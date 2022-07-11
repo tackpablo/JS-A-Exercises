@@ -1,3 +1,6 @@
+// Time Complexity - O(N)
+// Space Complexity - O(1)
+
 function averagePair(arr, num) {
     // initialize both pointers (one at start and other at end of array)
     let start = 0;

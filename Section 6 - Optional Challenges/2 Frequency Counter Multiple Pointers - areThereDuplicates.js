@@ -1,3 +1,6 @@
+// Time Complexity - O(N)
+// Space Complexity - O(N)
+
 // Frequency Counter Solution
 function areThereDuplicates() {
     // initialize colletion object
