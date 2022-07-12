@@ -1,3 +1,6 @@
+// Time Complexity - O(N)
+// Space Complexity - O(N)
+
 function countUniqueValues(arr) {
     // boundary condition where if array is empty, return
     if (arr.length === 0) return 0;

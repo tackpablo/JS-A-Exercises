@@ -1,3 +1,5 @@
+// Time Complexity - O(N)
+
 function validAnagram(str1, str2) {
     // boundary condition where if both strings have different lengths, return
     if (str1.length !== str2.length) return false;
