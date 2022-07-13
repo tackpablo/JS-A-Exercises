@@ -1,27 +1,27 @@
 // Time Complexity - O(N)
 
-function maxSubarraySum(args, num) {
+function maxSubarraySum(arr, num) {
     // add whatever parameters you deem necessary - good luck!
     // initialize variables to hold sums
     let maxSum = 0;
     let tempSum = 0;
 
-    // boundary condition where if the args array length is shorter than the num, return null as there is no subarray of that size
-    if (args.length < num) return null;
+    // boundary condition where if the arr array length is shorter than the num, return null as there is no subarray of that size
+    if (arr.length < num) return null;
 
-    // loop through args array (but only the length of num)
+    // loop through arr array (but only the length of num)
     for (let i = 0; i < num; i++) {
-        // add the num length values of args array to maxSum
-        maxSum += args[i];
+        // add the num length values of arr array to maxSum
+        maxSum += arr[i];
     }
 
     // tempSum holds the maxSum temporarily
     tempSum = maxSum;
 
-    // loop through args array
-    for (let i = num; i < args.length; i++) {
+    // loop through arr array
+    for (let i = num; i < arr.length; i++) {
         // let tempSum = tempSum (maxSum) minus the first digit of num and add current index value
-        tempSum = tempSum - args[i - num] + args[i];
+        tempSum = tempSum - arr[i - num] + arr[i];
         // maxSum is the max between the maxSum and tempSum
         maxSum = Math.max(maxSum, tempSum);
     }
