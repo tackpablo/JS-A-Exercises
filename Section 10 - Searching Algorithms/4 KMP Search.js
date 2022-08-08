@@ -47,3 +47,5 @@ function buildPrefixTable(s) {
     }
     return table;
 }
+
+// Refer for explanation https://www.youtube.com/watch?v=mAqsI9Jw1RI
